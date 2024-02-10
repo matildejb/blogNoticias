@@ -1,30 +1,34 @@
-<header>BLOG DE NOTICIAS</header>
+
 <div id="container">
-<form id="form">
-  
+
+  <div id="form">
     <label for="name-title">Título:</label>
-    <input id="name-title" type="text" />
+    <input id="name-title" type="text" [(ngModel)]="newPublicacion.titulo"/>
 
     <label id="imagen">Añadir imagen</label>
-    <img src="" id="imagen" alt="" />
-    <input type="file" accept="image/*" onchange="mostrarImagen(event)" />
+    <img src="" id="imagen" alt="" [(ngModel)]="newPublicacion.img"/>
+    <input type="file" accept="image/*"/>
   
     <label for="news-body">Información sobre la noticia:</label>
     <textarea
       id="news-body"
-      placeholder="Escribe aquí sobre la noticia"
+      placeholder="Escribe aquí sobre la noticia" [(ngModel)]="newPublicacion.contenido"
     ></textarea>
   
     <label for="fecha">Selecciona una fecha:</label>
-    <input type="date" id="fecha" name="fecha">
+    <input type="date" id="fecha" name="fecha" [(ngModel)]="newPublicacion.fecha">
 
-  <button id="submit">Añadir Noticia</button>
-</form>
+  <button id="submit" (click)="guardarDatos()">Añadir Noticia</button>
 
+</div>
 
 <div id="list">
     <h1>Listado de Noticias</h1>
 
+    <div [innerHTML]="cargarDatos()">
+      <!--PINTAR DATOS-->
+    </div>
+    
     <div class="news">
        <div class="content"> 
         <h2 class="title">Descubren nueva especie de mariposa en la selva amazónica</h2>

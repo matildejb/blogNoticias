@@ -1,25 +1,10 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-header {
-    text-align: center;
-    margin: 20px;
-    color: aliceblue;
-    background-color: black;
-    letter-spacing: 5px;
-    font-weight: bolder;
-}
-
 #container {
     display: flex;
     justify-content: space-around;
     padding-top: 20px;
 }
 
-form {
+#form {
     display: flex;
     flex-direction: column;
     max-width: 30%;
