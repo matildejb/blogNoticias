@@ -1,0 +1,46 @@
+<header>BLOG DE NOTICIAS</header>
+<div id="container">
+<form id="form">
+  
+    <label for="name-title">Título:</label>
+    <input id="name-title" type="text" />
+
+    <label id="imagen">Añadir imagen</label>
+    <img src="" id="imagen" alt="" />
+    <input type="file" accept="image/*" onchange="mostrarImagen(event)" />
+  
+    <label for="news-body">Información sobre la noticia:</label>
+    <textarea
+      id="news-body"
+      placeholder="Escribe aquí sobre la noticia"
+    ></textarea>
+  
+    <label for="fecha">Selecciona una fecha:</label>
+    <input type="date" id="fecha" name="fecha">
+
+  <button id="submit">Añadir Noticia</button>
+</form>
+
+
+<div id="list">
+    <h1>Listado de Noticias</h1>
+
+    <div class="news">
+       <div class="content"> 
+        <h2 class="title">Descubren nueva especie de mariposa en la selva amazónica</h2>
+        <p class="contenido">Investigadores de la Universidad Nacional de la Amazonía han anunciado el descubrimiento de una nueva especie de mariposa en lo profundo de la selva amazónica. La especie, bautizada como "Morpho amazonica", se distingue por sus alas de un azul brillante y un patrón de rayas únicas en la parte posterior. Este hallazgo representa un emocionante avance en la comprensión de la biodiversidad de la región amazónica y destaca la importancia de proteger estos ecosistemas únicos.</p>
+        <p class="date">02/01/2024</p>
+       </div>
+        <img src="assets/mariposa.jpg" alt="nuevaEspecie" title="mariposa amazónica" class="imagenes">
+    </div>
+    <div class="news">
+       <div class="content"> 
+        <h2 class="title">Científicos descubren un nuevo planeta habitable en la Vía Láctea</h2>
+        <p class="contenido">Un equipo de astrónomos anunció el descubrimiento de un nuevo planeta en la zona habitable de una estrella cercana a la Tierra. El planeta, llamado "Aurora", tiene condiciones atmosféricas y de temperatura que podrían ser adecuadas para la vida tal como la conocemos. Este emocionante hallazgo abre nuevas oportunidades para la búsqueda de vida extraterrestre y el estudio de planetas similares a la Tierra en nuestra galaxia.</p>
+        <p class="date">12/08/2020</p>
+    </div>
+        <img src="assets/planeta.jpg" alt="nuevaEspecie" title="mariposa amazónica" class="imagenes">
+    </div> 
+</div>
+
+</div>
