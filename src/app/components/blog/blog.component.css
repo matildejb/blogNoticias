@@ -1,3 +1,4 @@
+
 #container {
     display: flex;
     justify-content: space-around;
@@ -92,9 +93,38 @@ h1 {
     }
     
 }
-
-.campo-no-rellenado {
-    border: 1px solid red;
-    background-color: #FFCCCC;
+@media only screen and (max-width: 768px) {
+    #container {
+        display: flex;
+        flex-direction: column;
+        padding-top: 20px;
+        justify-content: center; 
+         align-items: center; 
+       
+        
+    }
+    
+    #form {
+        
+        max-width: 90%;
+        
+    
+    }
+    #list {
+        margin-top: 40px;
+        max-width: 90%;
+    }
+    
 }
 
+
+
+.lista-noticias  {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px 5px;
+    padding: 30px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    margin-bottom: 50px;
+  }
+  
